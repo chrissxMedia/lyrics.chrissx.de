@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:args/args.dart';
+import 'package:dart_clipboard/dart_clipboard.dart';
 import 'package:yaml/yaml.dart';
 
 class Track {
@@ -28,13 +29,18 @@ class Track {
         album);
   }
 
+  @override
   String toString() => '("$name" by $artists, $isrc, $length, $album)';
 
   String lyrics(bool musixmatch) => _lyrics == null
       ? ''
       : !musixmatch
-          ? _lyrics! // TODO: file bug at dart to remove the !
-          : 'MUSIXMATCH NOT SUPPORTED RN'; // TODO
+          ? _lyrics!.trim() // TODO: file bug at dart to remove the !
+          : _lyrics!
+              .replaceAll(RegExp('\\[.+\\]'), '')
+              .replaceAll(RegExp('\n+'), '\n')
+              .trim(); // TODO: think a lot about how to musixmatch
+  // TODO: trim [,.!?] at end of line and split if > 70 chars
 }
 
 class Album {
@@ -55,6 +61,7 @@ class Album {
           .map<Track>((y) => Track.fromYaml(y, yaml['artists'], yaml['name']))
           .toList());
 
+  @override
   String toString() =>
       '{"$name" by $artists, $upc, released on $release, $tracks}';
 }
@@ -64,27 +71,25 @@ class TrackMatcher {
   List<String>? artists;
   String? album;
 
-  bool matches(Track t) {
-    bool b = true;
-    if (isrc != null) b &= t.isrc == isrc;
-    if (artists != null) b &= t.artists == artists;
-    if (album != null) b &= t.album == album;
-    return b;
-  }
+  bool matches(Track t) =>
+      (isrc == null || t.isrc == isrc) &&
+      (artists == null || t.artists == artists) &&
+      (album == null || t.album == album);
 
-  Iterable<Track> findTracks(Iterable<Album> albums) => albums
-      .map((a) => a.tracks.where((t) => matches(t)))
-      .reduce((x, y) => [...x, ...y]);
+  Iterable<Track> findTracks(Iterable<Album> albums) =>
+      albums.map((a) => a.tracks.where(matches)).reduce((x, y) => [...x, ...y]);
 }
 
 void main(List<String> arguments) {
   final parser = ArgParser()
+    // TODO: change this to a --genius flag
     ..addFlag('musixmatch', abbr: 'm', negatable: false)
     ..addOption('isrc', abbr: 'i')
     ..addOption('artists', abbr: 'a')
     ..addOption('album', abbr: 'A')
     ..addFlag('help', abbr: 'h', negatable: false)
-    ..addFlag('list', abbr: 'l', negatable: false);
+    ..addFlag('list', abbr: 'l', negatable: false)
+    ..addFlag('copy', abbr: 'c');
   final args = parser.parse(arguments);
 
   final albums = loadYaml(File('albums.yaml').readAsStringSync())
@@ -96,11 +101,12 @@ void main(List<String> arguments) {
   if (args.wasParsed('artists')) matcher.artists = args['artists'].split(',');
   if (args.wasParsed('album')) matcher.album = args['album'];
 
+  final out = args['copy'] ? Clipboard.setContents : print;
   if (args['help']) {
-    print(parser.usage);
+    out(parser.usage);
   } else if (args['list']) {
-    matcher.findTracks(albums).forEach(print);
+    matcher.findTracks(albums).forEach(out);
   } else {
-    print(matcher.findTracks(albums).first.lyrics(args['musixmatch']));
+    out(matcher.findTracks(albums).first.lyrics(args['musixmatch']));
   }
 }

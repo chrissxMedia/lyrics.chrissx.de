@@ -1,0 +1,3 @@
+[submodule "libclipboard"]
+	path = libclipboard
+	url = https://github.com/ichi-h/libclipboard.git
