@@ -1,0 +1,11 @@
+{
+  "source": "index.html",
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-yaml": "^2.4.1",
+    "parcel": "^2.4.1"
+  }
+}

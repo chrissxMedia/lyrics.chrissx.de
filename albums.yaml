@@ -6,7 +6,7 @@
   tracks:
     - name: Intro aus der Versenkung
       isrc: GBSMU8339381
-      length: 0:44
+      length: 44
       lyrics: |
         [Intro]
         (Ich mach den Bypass rein wie ein Chefarzt
@@ -291,7 +291,7 @@
   tracks:
     - name: 0BADINTRO
       isrc: GBSMU8619964
-      length: 0:36
+      length: 36
       lyrics: |
         (97.666 bpm, randombeat 2 referenz iz da, dann können wir ja anfangen)
         Mukke aus der versenkung war der abfall der letzten jahre
@@ -469,7 +469,7 @@
         Deutschrap ist komplett totgefickt (bam bam bam)
     - name: 10SHAMPOOFLASCHESKIT
       isrc: GBSMU8620272
-      length: 0:48
+      length: 48
     - name: 11ericof(BROWIESO)
       isrc: GBSMU8620273
       length: 1:55
@@ -574,7 +574,7 @@
         I am in the booth and I am in the mood
     - name: sees
       isrc: GBSMU8807381
-      length: 0:43
+      length: 43
       lyrics: |
         chrissx droppt jetz auf'n freshen beat rein
         Und ihr seid gefickt, tut mir ja ziemlich leid
@@ -599,7 +599,7 @@
         (sees)
     - name: funtasy_II
       isrc: GBSMU8807382
-      length: 0:50
+      length: 50
       lyrics: |
         chrissx am Mic, ich bin krass (krass)
         Schreibe alle meine Bars 3 Uhr nachts, (nachts)
@@ -655,7 +655,7 @@
         Jetz bin ich endlich frei
     - name: interludefuerchris
       isrc: GBSMU8827806
-      length: 0:45
+      length: 45
     - name: back to school
       isrc: GBSMU8827807
       length: 1:20
@@ -890,7 +890,7 @@
   tracks:
     - name: Kurva - OG
       isrc: GBSMU8969187
-      length: 0:53
+      length: 53
       lyrics: |
         [Part 1: chrissx]
         Zdeněk je v prdeli
@@ -1199,7 +1199,7 @@
         Und die Crewmates finden einen toten Kek
     - name: 25NICESKIT
       isrc: GBSMU9134894
-      length: 0:40
+      length: 40
     - name: 26SIMON
       isrc: GBSMU9134906
       length: 1:43
@@ -1308,7 +1308,7 @@
   tracks:
     - name: weihnachten 2020 lulw
       isrc: GBSMU9277878
-      length: 0:48
+      length: 48
       lyrics: |
         O Tannenbaum
         O Tannenbaum
@@ -1386,7 +1386,7 @@
         Wir machen Money jetz
     - name: Piano
       isrc: GBSMU9522538
-      length: 0:57
+      length: 57
       lyrics: |
         chrissx spielt Mikado
         chrissx spielt Mikado
@@ -1685,7 +1685,7 @@
         Und den Kauper zu boxen
     - name: physik
       isrc: GX3HH2190496
-      length: 0:53
+      length: 53
       lyrics: |
         Yea ich schreib morgen Physikklausur
         Klingt ja eigentlich ganz gut, ja nur
