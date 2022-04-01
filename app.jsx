@@ -27,7 +27,7 @@ class Album extends React.Component {
     matched(t, s) {
         const c = (x, y) => x === "" || (s.invert && !y) || (y && y.toLowerCase().includes(x.toLowerCase()));
         const b = c(s.isrc, t.isrc) && c(s.name, t.name) && c(s.lyrics, t.lyrics);
-        return s.invert ? !b : b;
+        return s.invert && (s.isrc || s.name || s.lyrics) ? !b : b;
     }
     tracks() {
         return this.props.tracks.filter(t => this.matched(t, this.props.search));
@@ -63,10 +63,10 @@ class LyricList extends React.Component {
                 <br />
                 <input onChange={(e) => this.setState({ lyrics: e.target.value })} placeholder="Lyrics" />
                 <br />
-                <input onChange={(e) => this.setState({ invert: e.target.value })} type="checkbox" />
+                <input onChange={(e) => this.setState({ invert: e.target.checked })} type="checkbox" />
                 <label>Invert</label>
                 <br />
-                <input onChange={(e) => this.setState({ musixmatch: e.target.value })} type="checkbox" />
+                <input onChange={(e) => this.setState({ musixmatch: e.target.checked })} type="checkbox" />
                 <label>Musixmatch</label>
                 {this.props.albums.map(a => <Album {...a} search={this.state} musixmatch={this.state.musixmatch} key={a.upc} />)}
             </div>
