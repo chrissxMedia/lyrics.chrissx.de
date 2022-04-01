@@ -5,6 +5,9 @@ import DateTime from "dayjs";
 import Albums from "./albums.yaml";
 
 class Track extends React.Component {
+    state = {
+        copied: false,
+    };
     lyrics() {
         return this.props.musixmatch && this.props.lyrics ? this.props.lyrics.replace(/\[.+\]/g, "").replace(/\n+/g, "\n").trim() : this.props.lyrics;
     }
@@ -14,9 +17,10 @@ class Track extends React.Component {
                 <a className="track-title" href={"#" + this.props.isrc} id={this.props.isrc}>{this.props.name} by {this.props.artists.join(", ")}</a>
                 <span className="track-info">Length: {DateTime.unix(this.props.length).format("mm:ss")}, ISRC: {this.props.isrc}</span>
                 {this.props.lyrics ?
-                <button className="track-clipboard" onClick={e => navigator.clipboard.writeText(this.lyrics()).then(x => alert(1))}>
-                    Copy Lyrics
-                </button> : undefined}
+                    <button className="track-clipboard"
+                        onClick={e => navigator.clipboard.writeText(this.lyrics()).then(x => this.setState({ copied: true }))}>
+                        {this.state.copied ? "Copied Lyrics" : "Copy Lyrics"}
+                    </button> : undefined}
                 <p className="lyrics">{this.lyrics()}</p>
             </div>
         );
@@ -45,16 +49,13 @@ class Album extends React.Component {
 }
 
 class LyricList extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            isrc: "",
-            name: "",
-            lyrics: "",
-            invert: false,
-            musixmatch: false,
-        };
-    }
+    state = {
+        isrc: "",
+        name: "",
+        lyrics: "",
+        invert: false,
+        musixmatch: false,
+    };
     render() {
         return (
             <div className="lyric-list">

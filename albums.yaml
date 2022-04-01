@@ -1,3 +1,37 @@
+- name: Sachsen
+  artists:
+    - chrissx
+  tracks:
+    - name: Sachsen
+      lyrics: |
+        [Intro]
+        In der Vergangenheit wie in der Gegenwart
+        Hatten Sachsen immer mit Mobbing und Ausgrenzung zu kämpfen
+        Jetzt ist damit Schluss
+
+        [Part]
+        Ständig wird vermutet und ständig wird getuschelt
+        Was machen nur Menschen, die so an Dialekt dahernuscheln
+        Sieht man sie mal einkaufen, erfährt man nämlich nicht viel
+        Außer was man schon weiß: die ham ja goakan stil
+        Der ihr Internet is a no ned so ganz auf'm neusten Stand
+        Und es überrascht die ned, is mal wieder a Wald verbrannt
+        Sie vermuten Gefühle meist zur völlig falschen Zeit
+        Und reisen meistens auch nicht so weit
+        Die Steckerleisten rauchen ab, die Aktien sind gekauft
+        Wo niemand sprüche über'n Kauper macht, während man ihn hier verstaut
+        Fashionmarken kennt man nicht, es wird nie auf Discord geklickt
+        Sprachmemos hört man nicht und Videos macht man mal ganz fix
+
+        [Hook]
+        Sehr viel Ehre für Sachsen
+        Sie ham es sich verdient
+        Sehr viel Ehre für Sachsen
+        Wir haben sie doch lieb
+        Sehr viel Ehre für Sachsen
+        Denn sie ham es sich verdient
+        Sehr viel Ehre für Sachsen
+        Wir haben sie doch alle lieb
 - name: Mukke aus der Versenkung
   artists:
     - chrissx
