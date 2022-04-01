@@ -1,8 +1,12 @@
 - name: Sachsen
   artists:
     - chrissx
+  upc: 5059505898976
+  release: 2019-12-23
   tracks:
     - name: Sachsen
+      isrc: GBSMU8217810
+      length: 1:37
       lyrics: |
         [Intro]
         In der Vergangenheit wie in der Gegenwart
