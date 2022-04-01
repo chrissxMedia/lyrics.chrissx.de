@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOMClient from "react-dom/client";
+import DateTime from "dayjs";
 
 import Albums from "./albums.yaml";
 
@@ -7,8 +8,8 @@ class Track extends React.Component {
     render() {
         return (
             <div className="track">
-                <span className="track-title">{this.props.name} by {this.props.artists.join(", ")}</span>
-                <span className="track-info">Length: {this.props.length}, ISRC: {this.props.isrc}</span>
+                <a className="track-title" href={"#" + this.props.isrc} id={this.props.isrc}>{this.props.name} by {this.props.artists.join(", ")}</a>
+                <span className="track-info">Length: {DateTime.unix(this.props.length).format("mm:ss")}, ISRC: {this.props.isrc}</span>
                 {this.props.lyrics ?
                 <button className="track-clipboard" onClick={e => navigator.clipboard.writeText(this.props.lyrics).then(x => alert(1))}>
                     Copy Lyrics
@@ -32,8 +33,8 @@ class Album extends React.Component {
         if (this.tracks().length === 0) return;
         return (
             <div className="album">
-                <span className="album-title">{this.props.name} by {this.props.artists.join(", ")}</span>
-                <span className="album-info">Released {this.props.release}, UPC: {this.props.upc}</span>
+                <a className="album-title" href={"#" + this.props.upc} id={this.props.upc}>{this.props.name} by {this.props.artists.join(", ")}</a>
+                <span className="album-info">Released {DateTime(this.props.release).format("YYYY-MM-DD")}, UPC: {this.props.upc}</span>
                 {this.tracks().map(t => <Track artists={this.props.artists} {...t} key={t.isrc} />)}
             </div>
         );
