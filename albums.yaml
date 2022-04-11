@@ -1595,33 +1595,6 @@
     - name: 37ericof(TURNUP)
       isrc: GBSMU9135089
       length: 1:35
-- name: weihnachten 2020 lulw
-  artists:
-    - chrissx
-  upc: 5059654285443
-  release: 2020-12-24
-  tracks:
-    - name: weihnachten 2020 lulw
-      isrc: GBSMU9277878
-      length: 48
-      lyrics: |
-        O Tannenbaum
-        O Tannenbaum
-
-        Jea, es is Weihnachten und ich baue nen beat
-        Keine Ahnung was der Typ da zieht
-        Nämlich meine ich den Weihnachtsmann
-        Der stirbt, weil er nichts gegen uns beide kann
-
-        chrissx Mister Häfftling ein tec team sondergleichen
-        Bald kommt ein Track, um es euch zu beweisen
-        Dass wir Kings im Game sind
-        Dass wir Kings im Game sind
-
-        Ok, da war bissl was falsch, aber egal
-        chrissx rappt wieder zu krass, aber egal
-        Weihnachten is wieder da, aber egal
-        Christentum trash, aber egal
 - name: Ich entsorge euch!
   artists:
     - chrissx
@@ -1653,22 +1626,55 @@
         Doch ich bin wie tastaturhersteller
         Denn ich hab mich nie geändert
 
-        [hook]
+        [Hook 1]
+        Ich ermorde dich
+        Entsorge dich
+        Mag horni nicht
+        Verordne dich
 
+        [Part 3]
         Unter all den whackheads
         Denn du bist endlich tot
         Ich such nen guten ort
         Und vergrabe dich dann dort
         Denn auf einmal wird der kekzechef zum toten kek
 
-        Hallo horni, dir war klar, dass das hier kommt
-        Gegen viktor war das jetzt der letzte song
-        Hallo horni, du bist als nächstes dran
+        [Hook 2]
+        Hallo Horni, dir war klar, dass das hier kommt
+        Gegen Viktor war das jetzt der letzte Song
+        Hallo Horni, du bist als nächstes dran
         Wie du an zer ja schon sehen kannst
-        Hallo horni, viktor liegt tot unter der erde
+        Hallo Horni, viktor liegt tot unter der Erde
         Als nächstes werde ich dein leben nehmen
-        Hallo horni, du hast jetzt schon angst?
-        Na dann wart mal bis nächstes jahr
+        Hallo Horni, du hast jetzt schon Angst?
+        Na dann wart mal bis nächstes Jahr
+- name: weihnachten 2020 lulw
+  artists:
+    - chrissx
+  upc: 5059654285443
+  release: 2020-12-24
+  tracks:
+    - name: weihnachten 2020 lulw
+      isrc: GBSMU9277878
+      length: 48
+      lyrics: |
+        O Tannenbaum, o Tannenbaum
+        O Tannenbaum, o Tannenbaum
+
+        Jea, es is Weihnachten und ich baue nen beat
+        Keine Ahnung was der Typ da zieht
+        Nämlich meine ich den Weihnachtsmann
+        Der stirbt, weil er nichts gegen uns beide kann
+
+        chrissx Mister Häfftling ein tec team sondergleichen
+        Bald kommt ein Track, um es euch zu beweisen
+        Dass wir Kings im Game sind
+        Dass wir Kings im Game sind
+
+        Ok, da war bissl was falsch, aber egal
+        chrissx rappt wieder zu krass, aber egal
+        Weihnachten is wieder da, aber egal
+        Christentum trash, aber egal
 - name: Yin Krissi
   artists:
     - chrissx
