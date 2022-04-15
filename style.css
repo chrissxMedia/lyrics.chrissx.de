@@ -15,10 +15,6 @@
     font-size: 32px;
 }
 
-.album-info {
-    float: right;
-}
-
 .track, .track * {
     background-color: #202020;
 }
@@ -33,16 +29,14 @@
 
 .album-info, .track-info {
     font-weight: 500;
-}
-
-.track-clipboard, .track-info {
     float: right;
-    margin-left: 10px;
 }
 
 .track-clipboard {
+    margin-right: 10px;
     font-size: 16px;
     font-weight: 400;
+    /*top: 30%;*/
 }
 
 .album-title, .track-title {

@@ -14,13 +14,18 @@ class Track extends React.Component {
     render() {
         return (
             <div className="track">
-                <a className="track-title" href={"#" + this.props.isrc} id={this.props.isrc}>{this.props.name} by {this.props.artists.join(", ")}</a>
-                <span className="track-info">Length: {DateTime.unix(this.props.length).format("mm:ss")}, ISRC: {this.props.isrc}</span>
-                {this.props.lyrics ?
-                    <button className="track-clipboard"
-                        onClick={e => navigator.clipboard.writeText(this.lyrics()).then(x => this.setState({ copied: true }))}>
-                        {this.state.copied ? "Copied Lyrics" : "Copy Lyrics"}
-                    </button> : undefined}
+                <a className="track-title" href={"#" + this.props.isrc} id={this.props.isrc} onClick={() => {
+                    window.location.hash = "#" + this.props.isrc;
+                    navigator.clipboard.writeText(window.location);
+                    // TODO: notify the user somehow
+                }}>{this.props.name} by {this.props.artists.join(", ")}</a>
+                <span className="track-info">
+                    {this.props.lyrics ?
+                        <button className="track-clipboard"
+                            onClick={e => navigator.clipboard.writeText(this.lyrics()).then(x => this.setState({ copied: true }))}>
+                            {this.state.copied ? "Copied Lyrics" : "Copy Lyrics"}
+                        </button> : undefined}
+                    Length: {DateTime.unix(this.props.length).format("mm:ss")}, ISRC: {this.props.isrc}</span>
                 {this.props.hide || !this.props.lyrics ? undefined : <p className="lyrics">{this.lyrics()}</p>}
             </div>
         );
@@ -40,7 +45,11 @@ class Album extends React.Component {
         if (this.tracks().length === 0) return;
         return (
             <div className="album">
-                <a className="album-title" href={"#" + this.props.upc} id={this.props.upc}>{this.props.name} by {this.props.artists.join(", ")}</a>
+                <a className="album-title" href={"#" + this.props.upc} id={this.props.upc} onClick={() => {
+                    window.location.hash = "#" + this.props.upc;
+                    navigator.clipboard.writeText(window.location);
+                    // TODO: notify the user somehow
+                }}>{this.props.name} by {this.props.artists.join(", ")}</a>
                 <span className="album-info">Released {DateTime(this.props.release).format("YYYY-MM-DD")}, UPC: {this.props.upc}</span>
                 {this.tracks().map(t => <Track {...this.props} {...t} key={t.isrc} />)}
             </div>
@@ -66,13 +75,13 @@ class LyricList extends React.Component {
                 <input onChange={(e) => this.setState({ lyrics: e.target.value })} placeholder="Lyrics" />
                 <br />
                 <input onChange={(e) => this.setState({ invert: e.target.checked })} id="invert" type="checkbox" />
-                <label for="invert">Invert</label>
+                <label htmlFor="invert">Invert</label>
                 <br />
                 <input onChange={(e) => this.setState({ musixmatch: e.target.checked })} id="musixmatch" type="checkbox" />
-                <label for="musixmatch">Musixmatch</label>
+                <label htmlFor="musixmatch">Musixmatch</label>
                 <br />
                 <input onChange={(e) => this.setState({ hide: e.target.checked })} id="hide" type="checkbox" />
-                <label for="hide">Hide Lyrics</label>
+                <label htmlFor="hide">Hide Lyrics</label>
                 {this.props.albums.map(a => <Album {...a} search={this.state} musixmatch={this.state.musixmatch} hide={this.state.hide} key={a.upc} />)}
             </div>
         );
