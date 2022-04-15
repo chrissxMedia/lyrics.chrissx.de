@@ -79,4 +79,13 @@ class LyricList extends React.Component {
     }
 }
 
-ReactDOMClient.createRoot(document.getElementById("root")).render(<LyricList albums={Albums.reverse()} />);
+function Root() {
+    React.useEffect(() => {
+        const id = window.location.hash;
+        const el = id && document.getElementById(id.from(1));
+        if (el) el.scrollIntoView();
+    }, [window.location.hash]);
+    return <LyricList albums={Albums.reverse()} />;
+}
+
+ReactDOMClient.createRoot(document.getElementById("root")).render(<Root />);
