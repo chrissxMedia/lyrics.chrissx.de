@@ -21,7 +21,7 @@ class Track extends React.Component {
                         onClick={e => navigator.clipboard.writeText(this.lyrics()).then(x => this.setState({ copied: true }))}>
                         {this.state.copied ? "Copied Lyrics" : "Copy Lyrics"}
                     </button> : undefined}
-                <p className="lyrics">{this.lyrics()}</p>
+                {this.props.hide || !this.props.lyrics ? undefined : <p className="lyrics">{this.lyrics()}</p>}
             </div>
         );
     }
@@ -55,6 +55,7 @@ class LyricList extends React.Component {
         lyrics: "",
         invert: false,
         musixmatch: false,
+        hide: false,
     };
     render() {
         return (
@@ -64,12 +65,15 @@ class LyricList extends React.Component {
                 <br />
                 <input onChange={(e) => this.setState({ lyrics: e.target.value })} placeholder="Lyrics" />
                 <br />
-                <input onChange={(e) => this.setState({ invert: e.target.checked })} type="checkbox" />
-                <label>Invert</label>
+                <input onChange={(e) => this.setState({ invert: e.target.checked })} id="invert" type="checkbox" />
+                <label for="invert">Invert</label>
                 <br />
-                <input onChange={(e) => this.setState({ musixmatch: e.target.checked })} type="checkbox" />
-                <label>Musixmatch</label>
-                {this.props.albums.map(a => <Album {...a} search={this.state} musixmatch={this.state.musixmatch} key={a.upc} />)}
+                <input onChange={(e) => this.setState({ musixmatch: e.target.checked })} id="musixmatch" type="checkbox" />
+                <label for="musixmatch">Musixmatch</label>
+                <br />
+                <input onChange={(e) => this.setState({ hide: e.target.checked })} id="hide" type="checkbox" />
+                <label for="hide">Hide Lyrics</label>
+                {this.props.albums.map(a => <Album {...a} search={this.state} musixmatch={this.state.musixmatch} hide={this.state.hide} key={a.upc} />)}
             </div>
         );
     }
