@@ -82,7 +82,7 @@ class LyricList extends React.Component {
 function Root() {
     React.useEffect(() => {
         const id = window.location.hash;
-        const el = id && document.getElementById(id.from(1));
+        const el = id && document.getElementById(id.substring(1));
         if (el) el.scrollIntoView();
     }, [window.location.hash]);
     return <LyricList albums={Albums.reverse()} />;
