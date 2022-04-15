@@ -7,6 +7,7 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
+    "@parcel/reporter-bundle-analyzer": "^2.4.1",
     "@parcel/transformer-yaml": "^2.4.1",
     "parcel": "^2.4.1"
   }
