@@ -1,5 +1,5 @@
 {
-  "source": "index.html",
+  "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "dependencies": {
     "dayjs": "^1.11.0",
@@ -9,6 +9,8 @@
   "devDependencies": {
     "@parcel/reporter-bundle-analyzer": "^2.4.1",
     "@parcel/transformer-yaml": "^2.4.1",
+    "@types/react": "^18.0.8",
+    "@types/react-dom": "^18.0.3",
     "parcel": "^2.4.1"
   }
 }
