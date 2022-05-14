@@ -1,5 +1,7 @@
 export function genius2musixmatch(raw) {
   if (!raw) return;
+  // TODO: capitalization
+  // TODO: remove punctuation at end of line but not ! and ?
   return raw
     .replace(/\[([pP][aA][rR][tT]|[vV][eE][rR][sS]).*\]/g, "#VERSE")
     .replace(/\[[bB][rR][iI][dD][gG][eE].*\]/g, "#BRIDGE")

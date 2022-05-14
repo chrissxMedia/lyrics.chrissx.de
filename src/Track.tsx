@@ -1,8 +1,9 @@
 import React from "react";
 import DateTime from "dayjs";
+import genius2musixmatch from "g2mm";
 
 function lyrics({ musixmatch, lyrics }) {
-    return musixmatch && lyrics ? lyrics.replace(/\[.+\]/g, "").replace(/\n+/g, "\n").trim() : lyrics;
+    return musixmatch && lyrics ? genius2musixmatch(lyrics) : lyrics;
 }
 
 function Track(props) {
