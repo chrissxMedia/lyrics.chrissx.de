@@ -4,10 +4,11 @@
   "dependencies": {
     "dayjs": "^1.11.0",
     "g2mm": "^0.1.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
   },
   "devDependencies": {
+    "@parcel/core": "^2.5.0",
     "@parcel/reporter-bundle-analyzer": "^2.4.1",
     "@parcel/transformer-yaml": "^2.4.1",
     "@types/react": "^18.0.8",
