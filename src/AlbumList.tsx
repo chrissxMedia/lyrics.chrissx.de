@@ -1,7 +1,8 @@
 import React from "react";
 import Album from "./Album";
+import { album } from "./types";
 
-function AlbumList({ albums }) {
+function AlbumList({ albums }: { albums: [album] }) {
     const [isrc, setIsrc] = React.useState("");
     const [name, setName] = React.useState("");
     const [lyrics, setLyrics] = React.useState("");
