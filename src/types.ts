@@ -13,10 +13,3 @@ export type album = {
     release: string,
     tracks: [track],
 };
-
-export type search = {
-    isrc: string,
-    name: string,
-    lyrics: string,
-    invert: boolean,
-};

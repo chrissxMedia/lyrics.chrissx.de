@@ -1,20 +1,23 @@
-import React from "react";
+import { useState, useRef, useEffect } from "react";
+import { bind } from "mousetrap";
 import Album from "./Album";
 import { album } from "./types";
 
 function AlbumList({ albums }: { albums: [album] }) {
-    const [isrc, setIsrc] = React.useState("");
-    const [name, setName] = React.useState("");
-    const [lyrics, setLyrics] = React.useState("");
-    const [invert, setInvert] = React.useState(false);
-    const [musixmatch, setMusixmatch] = React.useState(false);
-    const [hide, setHide] = React.useState(false);
+    const [search, setSearch] = useState("");
+    const [invert, setInvert] = useState(false);
+    const [musixmatch, setMusixmatch] = useState(false);
+    const [hide, setHide] = useState(false);
+    const searchBox = useRef(null);
+    useEffect(() => {
+        bind(["command+f", "ctrl+f", "/"], (e) => {
+            e.preventDefault();
+            searchBox.current.focus();
+        });
+    }, []);
     return (
         <div className="album-list">
-            <input onChange={e => setIsrc(e.target.value)} placeholder="ISRC" />
-            <input onChange={e => setName(e.target.value)} placeholder="Name" />
-            <br />
-            <input onChange={e => setLyrics(e.target.value)} placeholder="Lyrics" />
+            <input ref={searchBox} onChange={e => setSearch(e.target.value)} placeholder="Search" />
             <br />
             <input onChange={e => setInvert(e.target.checked)} id="invert" type="checkbox" />
             <label htmlFor="invert">Invert</label>
@@ -24,7 +27,7 @@ function AlbumList({ albums }: { albums: [album] }) {
             <br />
             <input onChange={e => setHide(e.target.checked)} id="hide" type="checkbox" />
             <label htmlFor="hide">Hide Lyrics</label>
-            {albums.map(a => <Album {...a} search={{ isrc, name, lyrics, invert }} musixmatch={musixmatch} hide={hide} key={a.upc} />)}
+            {albums.map(a => <Album {...a} {...{ search, invert, musixmatch, hide }} key={a.upc} />)}
         </div>
     );
 }
