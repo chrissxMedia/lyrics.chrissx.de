@@ -67,7 +67,7 @@
         Aber ich kann sie dir zeigen, denn die gibt es
         Aber halt nur für leute mit ähnlichkeiten zu weekend!
         (ich hab so n kleines kind gefickt, ok?)
-        [sprachmemo]
+        …
 
         [Hook: Hallo Viktor]
         Hallo Viktor, ich fick dich jetzt ohne Punchlines
@@ -91,7 +91,7 @@
         Was is das Turnier denn für ein Scheiß
         Eure Qualis, ja, die sind der Scheiß
         Also kurzgesagt beschissen
-        Keiner von euch hat jemals was gerissen
+        Keiner von euch hat je was gerissen
         Wie ihr die macht fragt man sich: was hat die denn geritten
         Und ich sag euch: ne bitch war es nicht
         Ach übrigens: wer bezahlt euch bitches die klicks
@@ -108,11 +108,13 @@
       isrc: GBSMU6890571
       length: 1:19
       lyrics: |
+        [Intro]
         (Leute TrüffelArmy hat mich zu nem rapbattle herausgefordert
         Dann legen wir mal gleich los…hier…kommt das
         Hier kommt ähm die 4tel final runde für das turnier des rapbattles
         Der Trüffelschwein rap)
 
+        [Part]
         Ich dachte, du bringst übel Lines
         Doch du müdes Trüffelschwein
         Klingst als ob du grade weinst
@@ -133,9 +135,10 @@
       isrc: GBSMU6890573
       length: 1:12
       lyrics: |
-        Ihr seid alle scheiße und ich nicht
+        [Intro]
+        (Ihr seid alle scheiße und ich nicht)
 
-
+        [Part]
         Du sagst Google, er traut sich nicht, seine echte Stimme zu zeigen,
         Doch in deinen Runden machst du dauernd das Gleiche,
         Pitchen versteckt die Stimme auch, also ist dein Angriff bescheiden.
@@ -149,7 +152,8 @@
         Was der sich da mal erlaubt hat,
         Dass er seinen Namen nach schwulen Videos gebaut hat
 
-        Das waren grade die 12 Bars mit denen du gefickt wurdest
+        [Outro]
+        (Das waren grade die 12 Bars mit denen du gefickt wurdest)
     - name: Finale vs. Verad
       artists:
         - chrissx
@@ -189,10 +193,13 @@
         Es ist dieser Häußler, der die drugs pusht so wie Marcus
         Crassus während du für fame jeden schwanz lutscht
     - name: Kingfinale vs. Syk
+      artists:
+        - chrissx
+        - Mister Häfftling
       isrc: GBSMU6890577
       length: 1:41
       lyrics: |
-        [Part]
+        [Part: chrissx]
         Ich frag mich für wen du so nen Scheiß textest
         Bei der Bekanntheit deiner Features kannste auch in nen leeren Raum rappen
         Du featurest jeden um mich zu stoppen
@@ -218,7 +225,7 @@
         Und hiernach bist du endgültig tot
         Denn du bist unnötig hinzugefügt, so wie das 10. Gebot
 
-        [Hook]
+        [Hook: Mister Häfftling & chrissx]
         Häffti gib ma ne Hook
         Ok, ich zerteile den Spast
         Weil seine Whackness nich mal in nen Kleiderschrank passt
@@ -234,7 +241,10 @@
       isrc: GBSMU8545917
       length: 1:03
       lyrics: |
+        [Intro]
         (Das CBT ist eröffnet!)
+
+        [Part]
         ZenaH ist Publikumsliebling mit seinem geilen Flow,
         ericenfermo disst sogar schon in der Qualifikation,
         Phoenix zerlegt im Projekt Flüsterton alle angekündigten Gegner
@@ -249,12 +259,17 @@
         Und mit seinem geilen Flow is des n klares Ding!
         Mit dem Oldschool hat aalex die meiste Ehre im Turnier,
         Wie soll er als Favorit das CBT denn noch verliern?
+
+        [Outro]
         (Round one, fight!)
     - name: Das CBT geht ins Halbfinale!
       isrc: GBSMU8545918
       length: 42
       lyrics: |
+        [Intro]
         (Das CBT geht ins Halbfinale!)
+
+        [Part]
         Im 4tel hatte er wohl zu viel Angst zu verlieren,
         Also ist Scorpion gleich mal ausgestiegen.
         Somit ist Phoenix der einzige Gewinner im 4tel-Finale
@@ -263,6 +278,8 @@
         ZenaH und InviZ bleiben nur die Keks am mic,
         Die mit schlechten Lines jedem zeig'n,
         Dass sie eh nich lang im Turnier drin blei'm!
+
+        [Outro]
         (Round two, fight!)
     - name: Der Vertreter - Die HR des Halbfinales
       isrc: GBSMU8545919
@@ -312,7 +329,7 @@
       lyrics: |
         [Intro]
         Ich hab im HBL 2 und 3 diverse gegner zerfleischt
-        Doch es wird wieder Zeit für KeKz diss 2 * 2
+        Doch es wird wieder Zeit für KeKz diss 2 ⋅ 2
         Mit neuen Lines und ohne private Details
         Denn diesmal fick ich dich wieder nur leicht
         Doch ich hab dich verdaut und ausgekackt
@@ -562,6 +579,7 @@
         (Mister Häfftling Productions)
         (Mista Kemikka Filters)
 
+        [Intro: chrissx]
         (Ok man des war um 3 Uhr nachts 8. August ich hab durchgemacht
         und neben FFmpeg Abfuck auch noch n bissl gecodet)
 
@@ -586,13 +604,13 @@
         Bringen sie noch schlichten beef mit ins Spiel
         Und was hab ich beim Texten im Bilde? serbische Filme
 
-        [Hook]
+        [Hook: chrissx & Mister Häfftling]
         Nikki das ist einfach nur ein scheiß Turnier
         Die Gegner kriegt man hier sehr leicht ausgespielt
         Du denkst aber das ist krass und du bist der Endgegner
         Und zeigst uns Eminem als deinen Darth Vader
 
-        [Part 2: Mister Häfftling]
+        [Part 2: Mister Häfftling & chrissx]
         Bitch ich schreibe Reime und Verse
         Bei weitem nicht der Erste
         Doch einer der besten dieser Szene
@@ -615,7 +633,7 @@
         robot karol is mehr high level als JavaScript
         scheiß nerd)
 
-        [Hook]
+        [Hook: chrissx & Mister Häfftling]
         Nikki das ist einfach nur ein scheiß turnier
         Die gegner kriegt man hier sehr leicht ausgespielt
         Du denkst aber das ist krass und du bist der endgegner
@@ -625,6 +643,7 @@
         Du denkst aber das ist krass und wird nicht gefickt
         Dann bist du nur ne dumme bitch
 
+        [Outro: Mister Häfftling & chrissx]
         (OK der Text is von chris in circa ner Stunde entstanden)
         (kann ma was einfacheres verlangen)
         (ach ja circa 3 Stunden später stand der beat dann auch)
@@ -632,6 +651,7 @@
       isrc: GBSMU8339448
       length: 1:28
       lyrics: |
+        [Intro]
         Was is das turnier denn für ein scheiß
         (Ok, das wird langsam langweilig
         häffti gib ma n richtig guten beat
@@ -639,6 +659,7 @@
         (sowas)
         (Ja, genau)
 
+        [Part]
         Der Typ, der wie viele die Fristen zu lang zieht
         Wird gefickt von dem Typen, der in jedem Turnier den Kack sieht
         Aber nich zu viel Arbeit, ich will wieder Minecraft zocken
@@ -684,7 +705,7 @@
         Doch jetz ist die quali auch schon wieder vorbei
         Mit den schlechten lines und dem krassen style
 
-        [hook]
+        [Hook]
         Ich glaub ich hab gemerkt
         Dieses turnier ist so scheiße
         Doch ich hab es entfernt
@@ -756,8 +777,11 @@
       isrc: GBSMU8619964
       length: 36
       lyrics: |
+        [Intro]
         (97.666 bpm, randombeat 2 referenz iz da, dann können wir ja anfangen)
-        Mukke aus der versenkung war der Abfall der letzten Jahre
+
+        [Part]
+        „Mukke aus der Versenkung“ war nur der Abfall der letzten Jahre
         Jetzt kommt Mukke, die könnte sogar neben Capital charten
         Ich nenn vielleicht keine Namen
         Aber früher ham sie mich gehatet, heute wollen sie blasen
@@ -897,7 +921,10 @@
       isrc: GBSMU8619968
       length: 1:26
       lyrics: |
+        [Intro]
         (schneller)
+
+        [Part]
         Yea es is chrissx, ich sitz in der Küche
         Yea es is chrissx, ich ficke die bitches
         Yea es is chrissx, ich mach irgendwas
@@ -973,8 +1000,11 @@
       isrc: GBSMU8619971
       length: 1:04
       lyrics: |
-        (ok im stehen recorden und keine adlibs mitmachen das wird schwierig)
+        [Intro]
+        (ok im Stehen recorden und keine adlibs mitmachen das wird schwierig)
         Deutschrap ist komplett totgefickt (da da da)
+
+        [Part]
         Deutschrap ist komplett totgefickt (scurr scurr scurr)
         Deutschrap ist komplett kaputtgefickt (scurr scurr scurr)
         Deutschrap ist komplett totgefickt (bam bam bam)
@@ -1124,8 +1154,11 @@
       isrc: GBSMU8620276
       length: 1:25
       lyrics: |
+        [Intro]
         (yea es is ahahahahahahaha)
         (schneller)
+
+        [Part]
         Yea es is chrissx, ich sitz in der Küche
         Yea es is chrissx, ich ficke die bitches
         Yea es is chrissx, ich mach irgendwas
@@ -1347,17 +1380,14 @@
         Schreibe alle meine Bars 3 Uhr nachts
         Drop dann gegen mittags die Parts
         Und bis Abend wird dann der Shit verpackt
-
         Nur am worken, man ich fuck nich mit hoes, ich
         Bin krasser equipt als dieser Daniel Zlotin
         Hoppe schnell ins car und wir ziehen los
         Ihr schiebt euch Filme und wir drehen Videos
-
         chrissx Media - in jedem Statement ist ein Asterisk
         Wenn wir Videos dreh'n, ist da halt ein Asterix
         Diе halbe Szene hat nich mal halb so viel Skill wie ich
         Und macht damit dann die doppelten Klicks
-
         Ich würd' euch euern Film ja gerne abkaufen, aber geht nicht
         In etwa so als wärt ihr Netflix
         Eure Lines gehen ja links rein, aber immer wieder
@@ -1403,7 +1433,10 @@
       isrc: GBSMU8827807
       length: 1:20
       lyrics: |
+        [Intro]
         (wo soll ich hin, digga, wo)
+
+        [Part]
         Ich spring hoch und werd bekannt, denn es gibt nen Seebeben
         Und dann is es wie bei Cookies, denn es gibt nen kekz/sregen
         Es ist 6 Uhr morgens, ich bin wieder im Stu
@@ -1606,8 +1639,11 @@
       isrc: GBSMU8827812
       length: 1:16
       lyrics: |
+        [Intro]
         (ich mach den bypass raus wie ein chefarzt
         und bin ein kek so wie der typ der im dezember kommt)
+
+        [Part]
         Wozu noch Alben bring'? Man, ich hab gar keine Lust
         Planlos x Schlaflos hat doch schon alles gebummst
         (ich fuck deine crew)
@@ -1812,6 +1848,7 @@
         In meinem Benz (scur)
         Fahr ich die Opps tot (scur scur scur)
 
+        [Outro]
         (scuur)
     - name: 22POLTERSTEIN
       isrc: GBSMU9134871
@@ -1866,6 +1903,7 @@
       isrc: GBSMU9134887
       length: 1:51
       lyrics: |
+        [Intro]
         (scur)
 
         [Part 1]
@@ -1979,7 +2017,7 @@
         Ey Simon, du bist echt leicht zu hassen
         Beim Dissschreiben hab ich Bock, auf deine Leiche zu kacken
         Denn was sagst du zu deinem Vorredner
-        "Jonas raus", du hörst dich ja an wie'n AfD'ler
+        „Jonas raus“, du hörst dich ja an wie'n AfD'ler
         Und warum ich deine Mutter nicht ficke
         Sie ist deine Ma und du bist sogar zu dumm um zu trinken
         Da war der ganze Physikboden voll
@@ -2004,23 +2042,22 @@
       isrc: GBSMU9134907
       length: 1:08
       lyrics: |
+        [Intro]
         (Royal Rumble)
 
+        [Part]
         chrissx hört 7DRAP (dam bam bam)
         chrissx hört 7DRAP (ja ja ja)
         chrissx hört 7DRAP (jo jo ja)
         chrissx hört 7DRAP (dam dam dam)
-
         chrissx schiebt Turnup (jaa)
         chrissx schiebt Turnup (ja ja ja)
         chrissx schiebt Turnup (ja ja ja)
         chrissx schiebt Turnup (bam bam bam)
-
         chrissx hört 7 Deutschrap Tracks
         chrissx hört 7 Deutschrap Tracks (whack)
         chrissx hört 7 Deutschrap Tracks (whack whack)
         chrissx hört 7 Deutschrap Tracks (whack whack whack)
-
         chrissx' Augen schieben Turnup (turnup)
         chrissx' Augen schieben Turnup (turnup)
         chrissx' Augen schieben Turnup (turnup)
@@ -2431,31 +2468,31 @@
       isrc: GBSMU9522538
       length: 57
       lyrics: |
+        [Intro]
         (jea
         jetz kommen die adlibs on point)
 
+        [Part]
         chrissx spielt Mikado (gaming)
         chrissx spielt Mikado (gaming)
         chrissx spielt Mikado (gaming)
         chrissx spielt Mikado (gaming)
-
         chrissx spielt Piano (musician)
         chrissx spielt Piano (musician)
         chrissx spielt Piano (musician musician)
         chrissx spielt Piano (music)
-
         chrissx kriegt ne 1 im Musikunterricht (ja)
         chrissx kriegt ne 1 im Musikunterricht (streber)
         chrissx kriegt ne 1 im Musikunterricht (streber)
         chrissx kriegt ne 1 im Musikunterricht (streber)
-
         chrissx fickt dich und deine Clique (je)
         chrissx fickt dich und deine Clique (fick dich)
         chrissx fickt dich und deine Clique (fick dich)
         chrissx fickt dich und deine Clique (fick dich)
 
-        (das hat wieder spaß gemacht
-        lol)
+        [Outro]
+        (das hat wieder spaß gemacht)
+        (lol)
     - name: SIMON Beat Ready
       isrc: GBSMU9522539
       length: 1:50
@@ -2730,7 +2767,7 @@
       isrc: GX3HH2190495
       length: 1:43
       lyrics: |
-        [Part 1]
+        [Part 1: chrissx]
         (Punchline)
         Ey chrissx kommt an mit dem zu krassen Flow
         Und nem Racecar das is red, wie die Fahrschule, bro
@@ -2752,7 +2789,7 @@
         Und dafür halt auch in der Schule und nicht nur zuhause zu hocken
         Und den K- zu boxen
 
-        [Part 2]
+        [Part 2: depresja]
         Wieder zuhause hocken, kein Bock
         Politiker sind lost, gehen wir jetz Schule oder nich
         So ein Witz auf einmal heißt es Maske an Maske aus
@@ -2760,7 +2797,7 @@
         chrissx schläft er 3 Tage nicht oh shit
         Politiker sind einfach nur Witze
         Sie können sich nicht entscheiden
-        Und das auf unsere Kosten und das Zeugnis sagt nur oh shit
+        Und das auf unsre Kosten und das Zeugnis sagt nur oh shit
     - name: physik
       isrc: GX3HH2190496
       length: 53
@@ -2830,7 +2867,7 @@
       isrc: GX3HH2190498
       length: 1:40
       lyrics: |
-        [Part 1]
+        [Part 1: chrissx]
         Yea es is chrissx, ich hab keine Schule
         Aber ich bin auch die Coole
         Aber ich hab dafür Homeschooling
@@ -2848,7 +2885,7 @@
         Und dann bin ich im Big Blue Button
         Da tun wir komische Sachen machen
 
-        [Part 2]
+        [Part 2: chrissx]
         So mit Physik
         Und irgendein Mist
         Ich hab auch keinen Plan
@@ -2864,7 +2901,7 @@
         (nein)
         (pause)
 
-        [Part 3]
+        [Part 3: chrissx]
         Ich hab grad die Konferenz verlassen
         Insgesamt fand ich die Konferenz belastend
         Ey yo und jetzt pull ich up zu dem breakfast
@@ -2874,7 +2911,7 @@
         Ey yo, das Smartphone ist in meiner hand
         Es ist fast 9 Uhr und chrissx geht ham
 
-        [Part 4]
+        [Part 4: depresja]
         chrissx geht ham wie das Fleisch
         Physik ist dämlicher Scheiß
         Ich bau den Kin Yalle Beat
@@ -2911,13 +2948,13 @@
       isrc: GX3HH2190500
       length: 1:29
       lyrics: |
-        [Intro]
+        [Intro: chrissx]
         (Liebe Genossinnen und Genossen
         Für die, die's jetzt auch noch nicht wussten
         Ja, ich bin lesbisch, und das ist auch gut so)
         (Damit auch keine Irritationen aufkommen)
 
-        [Part 1]
+        [Part 1: chrissx]
         chrissx Media, egal was du dir reinziehst
         Alles was wir machen wird krasse Musik
         Du machst Rap von Wien bis Bregentz
@@ -2927,7 +2964,7 @@
         chrissx Media steht für die krasseste Musik, die ihr jemals gehört habt
         Merkt euch diese Wörter
 
-        [Part 2]
+        [Part 2: chrissx]
         Ich habe jetzt 1k Tracks in meiner Playlist
         Go tell my mom that I made it
         Meine Snacks kauf ich nur bei Mondelez
@@ -2937,7 +2974,7 @@
         Das sind 900 Kilo clout, ich bin nicht fett
         Ich droppte 2 Alben und jetz bin ich wieder weg
 
-        [Part 3]
+        [Part 3: depresja]
         (Liebe Genossinnen und Genossen
         Ich sag's euch auch und wer's noch nicht gewusst hat)
         Wer es noch nicht wusste: ich bin dope
@@ -2949,7 +2986,7 @@
         Wir sind einfach zu heftig
         ...
 
-        [Outro]
+        [Outro: depresja]
         Wir sind heiß
         Und tight
         Und pride
@@ -3028,7 +3065,7 @@
         (so, grad schon drei tracks recordet
         jetz wird der vierte recordet
         ah ne
-        ich hab erst die hälfte des track überhaupt geschrieben
+        ich hab erst die hälfte des tracks überhaupt geschrieben
         ich hab den track noch gar nich fertig geschrieben hahahaha
         ich-ich bin einfach so lost
         ich weiß noch nich mal was ich fertig geschrieben habe
