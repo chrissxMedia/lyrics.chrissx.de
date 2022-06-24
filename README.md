@@ -8,9 +8,6 @@ lyrics file (`albums.yaml`) is copyrighted and not licensed to you.
 
 ## `albums.yaml`
 
-**NOTE**: The lyrics format will be subject to rapid change within the next
-days/weeks.
-
 This file contains all the lyrics in Genius format. As the extension implies, it
 is written in a YAML-based format. That will be detailed here to aid both with
 editing it and making tools that consume it.
@@ -32,3 +29,9 @@ The root is a `list<Album>`.
 - `length`
 - `lyrics` (may be missing if it is instrumental or not transcribed yet)
 - `artists` (usually missing, if it has the same as the album)
+
+### `lyrics`
+
+The actual lyrics are formatted very similar to
+[Genius's](https://genius.com/Genius-how-to-add-songs-to-genius-annotated), a
+more detailed guide is to be written.
