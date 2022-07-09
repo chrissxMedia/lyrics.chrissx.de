@@ -1,6 +1,6 @@
 {
   "name": "g2mm",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Library and tool for converting Genius style lyrics to Musixmatch style.",
   "author": "pixel <chrissx@chrissx.de>",
   "maintainers": [
@@ -30,6 +30,6 @@
   },
   "homepage": "https://github.com/chrissxMedia/lyrics.chrissx.de/tree/main/g2mm#readme",
   "devDependencies": {
-    "expect": "^28.1.0"
+    "expect": "^28.1.1"
   }
 }
