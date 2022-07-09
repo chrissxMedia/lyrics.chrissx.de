@@ -12,4 +12,8 @@ function Root() {
     return <AlbumList albums={Albums.reverse()} />;
 }
 
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register(new URL("sw.js", import.meta.url), {type: "module"});
+}
+
 ReactDOMClient.createRoot(document.getElementById("root")).render(<Root />);

@@ -1,0 +1,22 @@
+{
+    "name": "chrissx Media Lyrics Department",
+    "short_name": "Lyrics",
+    "icons": [
+        {
+            "src": "favicon.png",
+            "type": "image/png",
+            "sizes": "300x300",
+            "purpose": "any"
+        },
+        {
+            "src": "favicon.png",
+            "type": "image/png",
+            "sizes": "300x300",
+            "purpose": "maskable"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#000000"
+}
