@@ -8,16 +8,16 @@ function AlbumList({ albums }: { albums: [album] }) {
     const [invert, setInvert] = useState(false);
     const [musixmatch, setMusixmatch] = useState(false);
     const [hide, setHide] = useState(false);
-    const searchBox = useRef(null);
+    const searchBox = useRef<HTMLInputElement>(null);
     useEffect(() => {
         bind(["command+f", "ctrl+f", "/"], (e) => {
             e.preventDefault();
-            searchBox.current.focus();
+            searchBox.current?.focus();
         });
     }, []);
     return (
         <div className="album-list">
-            <input ref={searchBox} onChange={e => setSearch(e.target.value)} placeholder="Search" />
+            <input ref={searchBox} onChange={e => setSearch(e.target.value)} type="search" placeholder="Search" />
             <br />
             <input onChange={e => setInvert(e.target.checked)} id="invert" type="checkbox" />
             <label htmlFor="invert">Invert</label>
