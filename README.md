@@ -17,7 +17,7 @@ The root is a `list<Album>`.
 ### `Album`
 
 - `name`
-- `upc`
+- `upc?`
 - `artists`
 - `release`
 - `tracks`: `list<Track>`
@@ -25,10 +25,10 @@ The root is a `list<Album>`.
 ### `Track`
 
 - `name`
-- `isrc`
+- `isrc?`
 - `length`
-- `lyrics` (may be missing if it is instrumental or not transcribed yet)
-- `artists` (usually missing, if it has the same as the album)
+- `lyrics?`
+- `artists?` (usually missing, if it has the same as the album)
 
 ### `lyrics`
 
