@@ -1,16 +1,16 @@
-import { useState, useRef, useEffect } from "react";
+import React from "react";
 import { bind } from "mousetrap";
 import Album from "./Album";
 import { album } from "./types";
 
 function AlbumList({ albums }: { albums: [album] }) {
-    const [search, setSearch] = useState("");
-    const [invert, setInvert] = useState(false);
-    const [musixmatch, setMusixmatch] = useState(false);
-    const [hide, setHide] = useState(false);
-    const searchBox = useRef<HTMLInputElement>(null);
-    useEffect(() => {
-        bind(["command+f", "ctrl+f", "/"], (e) => {
+    const [search, setSearch] = React.useState("");
+    const [invert, setInvert] = React.useState(false);
+    const [musixmatch, setMusixmatch] = React.useState(false);
+    const [hide, setHide] = React.useState(false);
+    const searchBox = React.useRef<HTMLInputElement>(null);
+    React.useEffect(() => {
+        bind(["command+f", "ctrl+f", "/", "s"], e => {
             e.preventDefault();
             searchBox.current?.focus();
         });
