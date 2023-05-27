@@ -12,23 +12,24 @@ This file contains all the lyrics in Genius format. As the extension implies, it
 is written in a YAML-based format. That will be detailed here to aid both with
 editing it and making tools that consume it.
 
-The root is a `list<Album>`.
+The root is a `[album]`.
 
-### `Album`
+### `album`
 
-- `name`
-- `upc?`
-- `artists`
-- `release`
-- `tracks`: `list<Track>`
+- `name`: `string`
+- `upc?`: `number` (missing if it has not been released commercially)
+- `artists`: `[string]`
+- `release`: `string`
+- `cover?`: `string` (missing if it has not been released commercially)
+- `tracks`: `[track]`
 
-### `Track`
+### `track`
 
-- `name`
-- `isrc?`
-- `length`
-- `lyrics?`
-- `artists?` (usually missing, if it has the same as the album)
+- `name`: `string`
+- `isrc?`: `string` (missing if it has not been released commercially)
+- `length`: `number | string`
+- `lyrics?`: `string` (missing if it doesn't have lyrics or they haven't been transcribed)
+- `artists?`: `[string]` (missing if it has the same as the album)
 
 ### `lyrics`
 
