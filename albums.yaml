@@ -1,3 +1,13 @@
+- name: Dank Donkz
+  artists:
+    - Mister Häfftling
+  upc: 5059366452706
+  release: 2018-10-25
+  cover: https://storage.googleapis.com/routenote-release-cloudfiles/5059366452706/dank_donkz1568992963.jpg
+  tracks:
+    - name: Dank Donkz
+      isrc: GBSMU6919578
+      length: 31
 - name: Ich fresse euch!
   artists:
     - chrissx
