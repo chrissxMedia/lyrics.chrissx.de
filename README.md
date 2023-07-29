@@ -21,6 +21,7 @@ The root is a `[album]`.
 - `artists`: `[string]`
 - `release`: `string`
 - `cover?`: `string` (missing if it has not been released commercially)
+- `link?`: `string` (missing if it has not been released commercially)
 - `tracks`: `[track]`
 
 ### `track`
