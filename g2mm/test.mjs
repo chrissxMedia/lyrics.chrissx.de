@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import genius2musixmatch from './index.mjs';
+import g2mm from './index.mjs';
 import { expect } from 'expect';
 
 const genius = `[Songtext zu ...nein]
@@ -18,7 +18,7 @@ trap
 [Verse 2]
 hello
 [häffti]
-hi too`;
+ hi  too `;
 
 const musixmatch = `#VERSE
 This is a part,
@@ -35,4 +35,16 @@ trap
 hello
 hi too`;
 
-expect(genius2musixmatch(genius)).toBe(musixmatch);
+const plain = `This is a part,
+oh ja!
+
+My life is nice:
+Swag!
+
+trap
+
+hello
+hi too`;
+
+expect(g2mm(genius)).toBe(musixmatch);
+expect(g2mm(genius, "plain")).toBe(plain);

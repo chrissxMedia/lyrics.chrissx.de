@@ -1,12 +1,12 @@
 {
   "name": "g2mm",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Library and tool for converting Genius style lyrics to Musixmatch style.",
-  "author": "pixel <chrissx@chrissx.de>",
+  "author": "Pixel Häußler <pixel@chrissx.de>",
   "maintainers": [
     {
-      "name": "pixel",
-      "email": "chrissx@chrissx.de",
+      "name": "Pixel Häußler",
+      "email": "pixel@chrissx.de",
       "github-username": "pixelcmtd"
     }
   ],
@@ -30,6 +30,6 @@
   },
   "homepage": "https://github.com/chrissxMedia/lyrics.chrissx.de/tree/main/g2mm#readme",
   "devDependencies": {
-    "expect": "^28.1.1"
+    "expect": "^29.0.0"
   }
 }
