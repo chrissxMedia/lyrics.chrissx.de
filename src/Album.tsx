@@ -15,11 +15,11 @@ function matched(t: track, search: string, invert: boolean): boolean {
 function Album(props: album & { search: string, invert: boolean, musixmatch: boolean, hide: boolean }) {
     const searched = (x?: string) => contains(x, props.search);
     const tracks = props.tracks.filter(t => matched(t, props.search, props.invert));
-    const albumMatched = [...props.artists, props.name, props.release, props.upc.toString()].map(searched).reduce((a, b) => a || b);
+    const albumMatched = [...props.artists, props.name, props.release, props.upc?.toString()].map(searched).reduce((a, b) => a || b);
     if (tracks.length === 0 && !albumMatched) return <></>;
     return (
         <div className="album">
-            <a className="album-title" href={"#" + props.upc} id={props.upc.toString()} onClick={() => {
+            <a className="album-title" href={"#" + props.upc} id={props.upc?.toString()} onClick={() => {
                 window.location.hash = "#" + props.upc;
                 navigator.clipboard.writeText(window.location.toString());
                 // TODO: notify the user somehow

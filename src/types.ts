@@ -1,6 +1,6 @@
 export type track = {
     name: string,
-    isrc: string, // TODO: nullable
+    isrc?: string,
     length: number,
     lyrics?: string,
     artists?: [string],
@@ -8,9 +8,10 @@ export type track = {
 
 export type album = {
     name: string,
-    upc: number, // TODO: nullable
+    upc?: number,
     artists: [string],
     release: string,
-    cover: string, // TODO: nullable
+    cover?: string,
+    link?: string,
     tracks: [track],
 };

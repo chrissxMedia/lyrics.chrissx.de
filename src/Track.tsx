@@ -1,11 +1,11 @@
 import React from "react";
 import DateTime from "dayjs";
-import genius2musixmatch from "g2mm";
+import g2mm from "g2mm";
 import { track } from "./types";
 
 function Track(props: track & { hide, musixmatch }) {
     const [copied, setCopied] = React.useState(false);
-    const displayedLyrics = props.lyrics && props.musixmatch ? genius2musixmatch(props.lyrics) : props.lyrics;
+    const displayedLyrics = props.lyrics && props.musixmatch ? g2mm(props.lyrics) : props.lyrics;
     return (
         <div className="track">
             <a className="track-title" href={"#" + props.isrc} id={props.isrc} onClick={() => {
