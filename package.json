@@ -3,22 +3,22 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "dependencies": {
     "dayjs": "^1.11.4",
-    "g2mm": "^0.2.1",
+    "g2mm": "^0.2.2",
     "mousetrap": "^1.6.5",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@parcel/core": "^2.6.2",
-    "@parcel/packager-raw-url": "^2.6.2",
-    "@parcel/reporter-bundle-analyzer": "^2.6.2",
-    "@parcel/service-worker": "^2.6.2",
-    "@parcel/transformer-webmanifest": "^2.6.2",
-    "@parcel/transformer-yaml": "^2.6.2",
+    "@parcel/core": "^2.13.0",
+    "@parcel/packager-raw-url": "^2.13.0",
+    "@parcel/reporter-bundle-analyzer": "^2.13.0",
+    "@parcel/service-worker": "^2.13.0",
+    "@parcel/transformer-webmanifest": "^2.13.0",
+    "@parcel/transformer-yaml": "^2.13.0",
     "@types/mousetrap": "^1.6.9",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
-    "parcel": "^2.6.2",
+    "parcel": "^2.13.0",
     "process": "^0.11.10"
   }
 }
