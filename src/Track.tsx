@@ -3,7 +3,6 @@ import g2mm from "g2mm";
 import { track } from "./types";
 
 export default function Track(props: track & { hide, musixmatch }) {
-    console.log(props.length);
     const [copied, setCopied] = React.useState(false);
     const displayedLyrics = props.lyrics && props.musixmatch ? g2mm(props.lyrics) : props.lyrics;
     return (
