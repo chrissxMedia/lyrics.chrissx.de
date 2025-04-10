@@ -3,7 +3,7 @@ import { bind } from "mousetrap";
 import Album from "./Album";
 import { album } from "./types";
 
-function AlbumList({ albums }: { albums: [album] }) {
+export default function AlbumList({ albums }: { albums: [album] }) {
     const [search, setSearch] = React.useState("");
     const [invert, setInvert] = React.useState(false);
     const [musixmatch, setMusixmatch] = React.useState(false);
@@ -31,5 +31,3 @@ function AlbumList({ albums }: { albums: [album] }) {
         </div>
     );
 }
-
-export default AlbumList;
